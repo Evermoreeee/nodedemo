@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  background-color: #f3f3f3;
+  font-size: 14px;
+  font-family: '微软雅黑', 'myfont';
+}
+.user-center-li-bgcolor {
+  background-color: #515151;
+  color: #ffffff;
+}
+@font-face {
+  font-family: "myfont";
+  src: url('../font/font_icon/iconfont.eot');
+  src: url('../font/font_icon/iconfont.svg'), url('../font/font_icon/iconfont.ttf'), url('../font/font_icon/iconfont.woff');
+}
+
+#personal-bgimg {
+  background-image: url("../images/userCenter/u537.jpg");
+  background-origin: 0 0;
+  width: 100%;
+  height: 450px;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#center-user ul li {
+  list-style: none;
+  padding: 20px 60px;
+  text-align: center;
+}
+#center-user {
+  height: 740px;
+  width: 18%;
+  float: left;
+}
+#center-user ul {
+  background-color: white;
+  float: right;
+  clear: both;
+  margin-top: 40px;
+}
+#center-user ul li:hover {
+  cursor: pointer;
+  background-color: #cec8c8;
+}
+#user-center-img-change {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  float: right;
+  margin-right: 16px;
+}
+#user-center-img-change img {
+  width: 150px;
+}
+#user-center-img-change div {
+  display: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  float: left;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#user-center-img-change div span {
+  float: left;
+  font-size: 25px;
+  margin: 50px 60px;
+  color: #fff;
+  cursor: pointer;
+}
+#center-user-div2 {
+  margin-top: 76px;
+  height: 690px;
+  width: 74%;
+  margin-left: 22%;
+  position: absolute;
+  background-color: #ffffff;
+}
+.user-information {
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+  line-height: 80px;
+  height: 80px;
+  margin-top: 30px;
+  clear: both;
+}
+#user-information-div {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+#user-information-div ul {
+  float: left;
+}
+#user-information-div ul:nth-of-type(4){
+  margin-left: -30px
+}
+#user-information-div ul li {
+  list-style: none;
+  padding: 20px 80px;
+}
+#user-information2 {
+  width: 100%;
+  margin-top: 20px;
+}
+.user-collect,
+#user-Order,
+#user-Order-DIY,
+#user-location {
+  margin-top: 76px;
+  height: 690px;
+  width: 74%;
+  text-align: center;
+  margin-left: 22%;
+  position: absolute;
+  background-color: white;
+}
+#user-Order {
+  display: none;
+  height:650px;
+  overflow:auto;
+  width: 74%
+}
+#user-Order ul li,
+#user-Order-DIY ul li {
+  list-style: none;
+  float: left;
+  margin: 30px 30px;
+  cursor: pointer;
+}
+#user-Order ul,
+#user-Order-DIY ul {
+  width: 80%;
+  margin: 40px 8%;
+}
+.user-information-input {
+  width: 63%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+}
+.user-information-btn {
+  height: 36px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-left: -5px;
+  margin-top: -5px;
+  background-color: #ff5a00; 
+  color: white
+ }
+
+#user-Order ul {
+  clear: both;
+  width: 90%;
+  margin-left: 10%;
+}
+.user-Order-table {
+  clear: both;
+  width: 80%;
+  margin: 0 10%;
+  /* line-height: 60px; */
+  border-collapse: collapse;
+}
+.user-Order-table thead {
+  background-color: #515151;
+  color: white;
+  margin: none;
+}
+.user-Order-table thead tr th:first-child {
+  text-align: center;
+  line-height: 40px;
+  width: 52%
+}
+.user-Order-table thead tr th:not(:first-child){
+  width: 12%
+}
+.user-Order-table thead tr th {
+  border: none;
+  text-align: center;
+}
+
+.user-Order-table tbody tr td {
+  margin-top: 20px;
+  clear: initial
+}
+r-Order-table-thead tr th:not(:first-child){
+  width: 16%
+}
+.user-Order-table tbody tr{
+  border-bottom: 1px solid rgb(212, 212, 212)
+}
+.loginBtn {
+  width: 100px;
+  cursor: pointer;
+  color: #ff5a00;
+  border: 2px solid #ff5a00;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(255, 90, 0, 0.06);
+  font-size: 13px;
+  padding: 7px 10px;
+}
+.quixaoBtn {
+  width: 100px;
+  cursor: pointer;
+  color: #ff5a00;
+  border: 2px solid #ff5a00;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: white;
+  font-size: 13px;
+  padding: 7px 10px;
+}
+
+#user-Order-DIY {
+  display: none;
+}
+.user-collect {
+  display: none;
+  height:650px;
+  overflow:auto;
+  width: 74%
+}
+.user-collect-line {
+  height: 60px;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid #a1a1a1;
+  line-height: 60px;
+  margin-top: 30px;
+}
+.user-collect-div {
+  width: 80%;
+  margin: 0 auto;
+}
+.user-collect-div > div {
+  width: 40%;
+  float: left;
+  margin-left: 8%;
+}
+.user-collect-money{
+  /* margin-top: 20px; */
+}
+.user-collect-money > div {
+  float: left;
+  clear: both;
+}
+.user-collect-img {
+  width: 80%;
+}
+.user-collect-img img {
+  margin-top:80px;
+  width: 60%;
+}
+.user-collect-div2 {
+  clear: both;
+  margin-top: 19%;
+  position: absolute;
+  width: 24%;
+  margin-left: 1%;
+}
+.user-collect-div2 > p {
+  float: left;
+  line-height: 40px;
+}
+.user-collect-div2 > p:nth-of-type(2) {
+  clear: both;
+}
+.user-collect-div2 > p:last-child {
+  float: right;
+  font-size: 24px;
+}
+.user-collect-div2 > p:last-child span {
+  margin-left: 10px;
+}
+.user-collect-div2 > p:first-child {
+  color: red;
+  font-size: 18px;
+}
+#user-add-dress {
+  margin-top: 40px;
+  float: right;
+  margin-right: 10%;
+  border: 1px solid #ff5a00;
+}
+#user-location-div {
+  width: 75%;
+  margin: 0 auto;
+}
+#user-location-div ul {
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  border-radius: 5px;
+  /* margin-top: 20px; */
+}
+#user-centet-location-table2 body tr td{ /* 地址表格 */
+line-height: 40px
+}
+#user-location-div tr td{
+  line-height: 40px
+}
+
+#user-location-div > ul li:last-child {
+  border-right: none;
+}
+#user-location {
+  display: none;
+}
+#user-location table {
+  float: left;
+  margin-top: 20px;
+}
+#user-location table thead tr th {
+  width: 25%;
+  text-align: center;
+}
+#user-location table tbody tr td:first-child {
+  width: 25%;
+}
+.user-center-dizhi:hover{
+  background-color: rgb(224, 224, 224);
+}
+.user-center-dizhi{
+  height: 54px;
+}
+.user-center-do span {
+  color: #ff5a00;
+  cursor: pointer;
+}
+
+.change-user-information {
+  cursor: pointer;
+  font-size: 18px;
+}
+.user-center-logo {
+  width: 130px;
+}
+#user-center-parent {
+  background: url('http://ourjs.github.io/static/2015/arrow.png') right center no-repeat;
+  /* the width and the height of your image */
+  width: 100px;
+  height: 30px;
+  overflow: hidden;
+  border: solid 1px #ccc;
+}
+
+.user-center-modal div {
+  margin: 10px 30px;
+}
+#user-center-bir {
+  margin-top: 10px;
+}
+.hidediv {
+  display: none;
+}
+.user-collect-div2 > p:last-child span {
+  cursor: pointer;
+}
+.user-center-change-location div {
+  margin: 10px 30px;
+}
+#user-center-delete {
+  height: 150px;
+}
+
+#myModal5 {
+  width: 300px;
+  margin: 0 auto;
+}
+#myModal5  div{
+  width: 300px;
+}
+#user-center-change-pwd input,
+#user-center-change-newpwd input {
+  margin-left: 15px;
+}
+#user-delete-div{
+    margin:20px auto;
+}
+#user-center-DIY-td{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-center-location-img{
+  width: 150px;
+  height: 150px;
+}
+.Order-serch {
+  width: 300px;
+  float: right;
+}
+#user-dingdan{
+width: 37%;
+float: right;
+margin-top: 9%;
+margin-right: 17%
+}
+.user-Order-table tbody tr td:first-child{
+  text-align: left
+}
+#address_recvname{
+  text-align: center;
+}
+.custom_button{
+  padding:4px 10px;
+  margin-top: 2px;
+}
+/* #user-Order-body{
+  overflow-y: scroll;
+  height: 500px;
+} */
